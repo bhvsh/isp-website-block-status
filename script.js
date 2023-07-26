@@ -9,11 +9,25 @@ async function fetchUrl() {
         .then(text => text.split(/\r?\n/))
         .then(text => 
             {
-                if (text.includes(domain)) {
-                    document.getElementById("blockStatus").innerHTML="Blocked";
+                if (text.includes(domain) || text.includes(domain.replace('www.',''))) {
+                    document.getElementById("blockStatusACT").innerHTML="Blocked";
                 }
                 else {
-                    document.getElementById("blockStatus").innerHTML="Not Blocked";
+                    document.getElementById("blockStatusACT").innerHTML="Not Blocked";
+                }
+            })
+        .catch(err => console.log('Error: ', err));
+
+        fetch('https://raw.githubusercontent.com/captn3m0/airtel-blocked-hosts/airtel-fiber/airtel-fiber-blocked-hosts.txt')
+        .then(response => response.text())
+        .then(text => text.split(/\r?\n/))
+        .then(text => 
+            {
+                if (text.includes(domain) || text.includes(domain.replace('www.',''))) {
+                    document.getElementById("blockStatusAirtel").innerHTML="Blocked";
+                }
+                else {
+                    document.getElementById("blockStatusAirtel").innerHTML="Not Blocked";
                 }
             })
         .catch(err => console.log('Error: ', err));
