@@ -11,9 +11,11 @@ async function fetchUrl() {
             {
                 if (text.includes(domain) || text.includes(domain.replace('www.',''))) {
                     document.getElementById("blockStatusACT").innerHTML="Blocked";
+                    document.getElementById("blockStatusACT").style.color = "red";
                 }
                 else {
                     document.getElementById("blockStatusACT").innerHTML="Not Blocked";
+                    document.getElementById("blockStatusACT").style.color = "green";
                 }
             })
         .catch(err => console.log('Error: ', err));
@@ -25,9 +27,11 @@ async function fetchUrl() {
             {
                 if (text.includes(domain) || text.includes(domain.replace('www.',''))) {
                     document.getElementById("blockStatusAirtel").innerHTML="Blocked";
+                    document.getElementById("blockStatusAirtel").style.color = "red";
                 }
                 else {
                     document.getElementById("blockStatusAirtel").innerHTML="Not Blocked";
+                    document.getElementById("blockStatusAirtel").style.color = "green";
                 }
             })
         .catch(err => console.log('Error: ', err));
