@@ -1,7 +1,7 @@
 {
     "name": "Is it blocked?",
     "version": "1.0.0",
-    "description": "Checked whether the TLD of the website is blocked or not",
+    "description": "Checks whether the TLD of the website is blocked or not",
     "manifest_version": 3,
     "author": "bhvsh",
     "action":{
