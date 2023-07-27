@@ -20,3 +20,7 @@ This project uses the repositories made available by [qurbat](https://github.com
 Click on the extension icon to check whether the website is blocked or not. The extension will compare the domain with the block lists and display a message indicating whether the website is blocked or not.
 
 This extension requires an active internet connection to work. It will only be used to fetch the block lists and no other data will be collected from the user.
+
+## Contributing
+
+Feel free to open an issue or submit a pull request if you find any bugs or have any suggestions.
