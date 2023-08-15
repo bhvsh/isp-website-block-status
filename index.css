@@ -1,0 +1,19 @@
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+@media (prefers-color-scheme: dark) {
+    body.adaptive {
+        background-color: #1b1b1b;
+        color: #ffffffe8;
+    }
+    .green{
+        color: #0cbc0c;
+    }
+    .red{
+        color: #d91010;
+    }
+
+}
