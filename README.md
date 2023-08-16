@@ -10,6 +10,14 @@ This project uses the repositories made available by [qurbat](https://github.com
 
 ## Installation
 
+### From the Chrome Web Store
+
+[![](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/is-it-blocked/jofjelpcmnofajdkipmnafdjfopbhepn)
+
+Press the above button to install the extension from the Chrome Web Store.
+
+### From the source code
+
 1. Download the repository as a zip file and extract it.
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable `Developer mode` by clicking on the toggle switch on the top right corner.
